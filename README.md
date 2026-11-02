@@ -4,7 +4,6 @@
 
 ### Turn your idea into a complete startup blueprint — instantly.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-6366F1?style=for-the-badge)](https://adithya17-star.github.io/startup-copilot/)
 [![Built With](https://img.shields.io/badge/Built%20With-React%20%2B%20TypeScript-14B8A6?style=for-the-badge)](https://react.dev/)
 [![License](https://img.shields.io/badge/License-MIT-F59E0B?style=for-the-badge)](LICENSE)
 
@@ -60,7 +59,8 @@
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js 18+
+- Node.js 18+ to run and build the app
+- Node.js 22.18+ for `npm run check:api` (it runs a `.ts` file directly)
 - npm or yarn
 
 ### Run Locally
@@ -97,7 +97,9 @@ startup-copilot/
 │   └── check-api.ts        # runnable security checks for the API
 ├── src/
 │   ├── components/
+│   │   ├── Landing.tsx
 │   │   ├── Hero.tsx
+│   │   ├── BriefDemo.tsx    # anime.js storyboard (hero + loading)
 │   │   ├── Loading.tsx
 │   │   ├── Output.tsx
 │   │   ├── ui.tsx
@@ -123,12 +125,6 @@ startup-copilot/
 ├── vite.config.ts
 └── tailwind.config.js
 ```
-
----
-
-## 🌐 Live Demo
-
-**[https://adithya17-star.github.io/startup-copilot/](https://adithya17-star.github.io/startup-copilot/)**
 
 ---
 
