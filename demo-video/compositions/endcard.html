@@ -1,0 +1,66 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; font-family: "Archivo Black", sans-serif; color: #121212; }
+    #end-lines { position: absolute; left: 220px; top: 200px; }
+    .end-line { font-size: 136px; line-height: 1.08; letter-spacing: -0.03em; white-space: nowrap; }
+    .end-w { display: inline-block; }
+    #end-pt { position: relative; display: inline-block; padding: 0 16px; }
+    #end-mark { position: absolute; inset: 10px 0 0 0; background: #ffd60a; transform-origin: left center; }
+    #end-pt-txt { position: relative; }
+    #end-lockup { position: absolute; left: 0; right: 0; top: 320px; display: flex; flex-direction: column; align-items: center; }
+    #end-brand { display: flex; align-items: center; gap: 36px; }
+    #end-logo { width: 170px; height: 170px; }
+    #end-word { font-size: 120px; letter-spacing: -0.04em; text-transform: uppercase; }
+    #end-cta { display: flex; align-items: center; gap: 30px; margin-top: 70px; }
+    #end-btn { padding: 22px 34px; background: #ffd60a; border: 3px solid #121212; box-shadow: 6px 6px 0 #121212; font-size: 36px; text-transform: uppercase; }
+    #end-url { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 34px; }
+    #end-by { margin-top: 60px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 28px; color: #3a3a3a; }
+    #end-wipe { position: absolute; inset: 0; background: #ffd60a; transform-origin: right center; z-index: 6; }
+  </style>
+  <div id="root" data-composition-id="endcard" data-width="1920" data-height="1080">
+    <div id="end-lines" class="clip" data-start="0" data-duration="3.6">
+      <div class="end-line"><span class="end-w" id="ew1">No sign-up.</span></div>
+      <div class="end-line"><span class="end-w" id="ew2">No deck.</span></div>
+      <div class="end-line"><span class="end-w" id="ew3">Just your idea,</span></div>
+      <div class="end-line"><span class="end-w" id="end-pt"><span id="end-mark"></span><span id="end-pt-txt">pressure-tested.</span></span></div>
+    </div>
+
+    <div id="end-lockup" class="clip" data-start="3.45" data-duration="3.55">
+      <div id="end-brand">
+        <svg id="end-logo" viewBox="0 0 36 36">
+          <rect id="end-logo-shadow" x="6" y="6" width="28" height="28" fill="#121212" />
+          <g id="end-logo-tile">
+            <rect x="2" y="2" width="28" height="28" fill="#FFD60A" stroke="#121212" stroke-width="3" />
+            <path id="end-logo-arrow" d="M16 7 L24 15.5 H19.5 V25 H12.5 V15.5 H8 Z" fill="#121212" />
+          </g>
+        </svg>
+        <div id="end-word">LaunchDesk</div>
+      </div>
+      <div id="end-cta">
+        <div id="end-btn">Start a brief &rarr;</div>
+        <div id="end-url">launchdesk-rho.vercel.app/start</div>
+      </div>
+      <div id="end-by">Made by LedgerGeeks &middot; ledgergeeks.io</div>
+    </div>
+
+    <div id="end-wipe" class="clip" data-start="0" data-duration="0.4"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#end-wipe", { scaleX: 1 }, { scaleX: 0, duration: 0.38, ease: "power3.inOut" }, 0);
+    [["#ew1", 0.2], ["#ew2", 0.92], ["#ew3", 1.64], ["#end-pt", 2.44]].forEach(([id, t]) => {
+      tl.fromTo(id, { opacity: 0, y: 60, rotation: 2 }, { opacity: 1, y: 0, rotation: 0, duration: 0.32, ease: "back.out(2.2)" }, t);
+    });
+    tl.fromTo("#end-mark", { scaleX: 0 }, { scaleX: 1, duration: 0.35, ease: "power3.out" }, 2.57);
+    tl.to("#end-lines", { y: -160, opacity: 0, duration: 0.22, ease: "power3.in" }, 3.32);
+
+    tl.fromTo("#end-logo-tile", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "bounce.out" }, 3.48);
+    tl.fromTo("#end-logo-shadow", { opacity: 0 }, { opacity: 1, duration: 0.1 }, 3.7);
+    tl.fromTo("#end-logo-arrow", { y: 4 }, { y: -2, duration: 0.5, ease: "back.out(3)" }, 3.85);
+    tl.fromTo("#end-word", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.5, ease: "power3.out" }, 3.7);
+    tl.fromTo("#end-cta", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" }, 4.1);
+    tl.fromTo("#end-btn", { x: 0, y: 0, boxShadow: "6px 6px 0 #121212" }, { x: 3, y: 3, boxShadow: "3px 3px 0 #121212", duration: 0.08, yoyo: true, repeat: 1 }, 4.95);
+    tl.fromTo("#end-by", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 4.25);
+    window.__timelines["endcard"] = tl;
+  </script>
+</template>

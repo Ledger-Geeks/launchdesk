@@ -1,0 +1,514 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": true,
+  "lint": {
+    "ok": false,
+    "errorCount": 24,
+    "warningCount": 3,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "gsap_repeated_fromto_without_baseline",
+        "severity": "warning",
+        "message": "3 tl.fromTo() calls target \"#br-cursor\" with no stable baseline. The last-authored fromTo \"from\" values become the element's resting state for any seek before the first tween actually runs, because GSAP applies fromTo from-values at authoring time (immediateRender), not at tween position.",
+        "selector": "#br-cursor",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\brief.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 4.85s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g0\" resolves to element <div id=\"cap-g0\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g0",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g1\" resolves to element <div id=\"cap-g1\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g1",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g2\" resolves to element <div id=\"cap-g2\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g2",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g3\" resolves to element <div id=\"cap-g3\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g3",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g4\" resolves to element <div id=\"cap-g4\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g4",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g5\" resolves to element <div id=\"cap-g5\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g5",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g6\" resolves to element <div id=\"cap-g6\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g6",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g7\" resolves to element <div id=\"cap-g7\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g7",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g8\" resolves to element <div id=\"cap-g8\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g8",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g9\" resolves to element <div id=\"cap-g9\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g9",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g10\" resolves to element <div id=\"cap-g10\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g10",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g11\" resolves to element <div id=\"cap-g11\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g11",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g12\" resolves to element <div id=\"cap-g12\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g12",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g13\" resolves to element <div id=\"cap-g13\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g13",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g14\" resolves to element <div id=\"cap-g14\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g14",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g15\" resolves to element <div id=\"cap-g15\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g15",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g16\" resolves to element <div id=\"cap-g16\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g16",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g17\" resolves to element <div id=\"cap-g17\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g17",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g18\" resolves to element <div id=\"cap-g18\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g18",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g19\" resolves to element <div id=\"cap-g19\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g19",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g20\" resolves to element <div id=\"cap-g20\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g20",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g21\" resolves to element <div id=\"cap-g21\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g21",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g22\" resolves to element <div id=\"cap-g22\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g22",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "gsap_animates_clip_element",
+        "severity": "error",
+        "message": "GSAP animation sets visibility on a clip element. Selector \"#cap-g23\" resolves to element <div id=\"cap-g23\" class=\"cap-group clip\">. The framework manages clip visibility, and autoAlpha writes visibility as well as opacity. Do not animate these properties on clip elements.",
+        "selector": "#cap-g23",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\captions.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Remove the visibility/display/autoAlpha tween, or move the content into a child <div> and target that instead."
+      },
+      {
+        "code": "negative_z_index",
+        "severity": "warning",
+        "message": "`z-index: -1` paints the element behind its nearest stacking context's own content. With no stacking-context ancestor that context is the composition root itself, so an opaque background there hides it entirely: in the DOM, laid out, and absent from the picture. A transparent root leaves it visible. Siblings at `z-index: 0` or above are unaffected.",
+        "selector": "#end-mark",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\endcard.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Give the element's parent a stacking context - `isolation: isolate` is the cheapest, and `transform`, `filter`, `opacity` below 1, `contain: paint` and `will-change` all work too. The negative-z child then paints above that parent's background and renders normally. Or express paint order through DOM order - an earlier sibling paints behind a later one - and raise the elements that should sit in front rather than lowering this one."
+      },
+      {
+        "code": "negative_z_index",
+        "severity": "warning",
+        "message": "`z-index: -1` paints the element behind its nearest stacking context's own content. With no stacking-context ancestor that context is the composition root itself, so an opaque background there hides it entirely: in the DOM, laid out, and absent from the picture. A transparent root leaves it visible. Siblings at `z-index: 0` or above are unaffected.",
+        "selector": "#hook-mark",
+        "dataAttributes": {},
+        "sourceFile": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\compositions\\hook.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Give the element's parent a stacking context - `isolation: isolate` is the cheapest, and `transform`, `filter`, `opacity` below 1, `contain: paint` and `will-change` all work too. The negative-z child then paints above that parent's background and renders normally. Or express paint order through DOM order - an earlier sibling paints behind a later one - and raise the elements that should sit in front rather than lowering this one."
+      }
+    ],
+    "filesScanned": 7
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 0,
+    "samples": [],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [],
+    "checked": 0,
+    "passed": 0
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "step": 0,
+    "samples": 0
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

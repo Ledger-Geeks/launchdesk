@@ -1,0 +1,22 @@
+Every startup idea sounds great in your head. The hard part is finding out if it holds up, before you spend months building it.
+LaunchDesk turns a two-sentence idea into a complete startup brief, usually in a minute or two.
+This is the home page. The promise is simple. Eight sections in every brief. Zero accounts or sign-ups. And a landing page draft you can download.
+It works in three steps. You describe the idea. LaunchDesk analyses it. Then you read the brief.
+Every brief covers the same eight sections. Pitch, market, product, roadmap, tech stack, financials, go-to-market, and a landing page.
+Let's try one. You can type your own idea, or start from an example. We'll use inventory tracking for independent restaurants, that flags food waste before it happens.
+One click on Start a brief, and LaunchDesk gets to work.
+It drafts every section in one pass, so the market, the roadmap and the money all describe the same business.
+First, the pitch. A one-line summary, a viability score out of a hundred, and the scores behind it. This idea scored eighty-two.
+Below that, the problem, the solution, the value proposition, and the key risks, written plainly.
+The market section sizes the opportunity in plain numbers. Total market, serviceable market, a year-one target, and the growth rate.
+Then the customer segments, and the competitors, each one marked by how big a threat it is.
+The product section scopes the MVP feature by feature, and marks what ships first. It also suggests pricing, and the metrics worth tracking.
+The roadmap splits the plan into four phases, each with concrete milestones. It lists the team to hire, and how much to raise.
+The tech stack comes with a reason for every choice. Plus the architecture, a realistic MVP timeline, and the hard technical problems to expect.
+Financials cover the seed raise, the breakeven month, customer acquisition cost, lifetime value, and three years of revenue.
+These are AI estimates, not research. Use them to decide what to check first, then verify before you act.
+Go-to-market lays out the launch strategy, the acquisition channels in priority order, and a plan for the first ninety days.
+And finally, a landing page draft for the new startup, written for its customers. Download it as a single HTML file, and you have a starting point.
+Under the hood, it's built to be safe in front of real users. The AI key stays on the server, never in the browser.
+Every request is checked for size and rate-limited. The generated page runs in a locked-down sandbox. And your idea isn't stored by the app.
+No sign-up. No deck. Just your idea, pressure-tested. LaunchDesk, built by LedgerGeeks.

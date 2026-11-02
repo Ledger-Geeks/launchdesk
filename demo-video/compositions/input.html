@@ -1,0 +1,43 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; }
+    #in-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 670px 780px; }
+    #in-cam img { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; }
+    #in-cursor { position: absolute; left: 0; top: 0; width: 62px; height: 78px; z-index: 5; }
+    .in-ring { position: absolute; width: 90px; height: 90px; margin: -45px 0 0 -45px; border: 6px solid #121212; border-radius: 50%; z-index: 4; }
+    #in-wipe { position: absolute; inset: 0; background: #ffd60a; transform-origin: right center; z-index: 6; }
+  </style>
+  <div id="root" data-composition-id="input" data-width="1920" data-height="1080">
+    <div id="in-cam">
+      <img id="in-empty" class="clip" data-start="0" data-duration="1.62" src="assets/shots/01-hero.png" alt="" />
+      <img id="in-typed" class="clip" data-start="1.62" data-duration="3.68" src="assets/shots/02-typed.png" alt="" />
+    </div>
+    <div id="in-ring1" class="in-ring clip" data-start="1.6" data-duration="0.5" style="left: 419px; top: 812px"></div>
+    <div id="in-ring2" class="in-ring clip" data-start="4.3" data-duration="0.5" style="left: 969px; top: 654px"></div>
+    <svg id="in-cursor" class="clip" data-start="0.6" data-duration="4.7" viewBox="0 0 24 30">
+      <path d="M2 2 L2 24 L8 18.5 L12 27.5 L15.5 26 L11.5 17 L19.5 17 Z" fill="#121212" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round" />
+    </svg>
+    <div id="in-wipe" class="clip" data-start="0" data-duration="0.4"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#in-wipe", { scaleX: 1 }, { scaleX: 0, duration: 0.38, ease: "power3.inOut" }, 0);
+    // establish the page, then push into the form
+    tl.fromTo("#in-cam", { scale: 1.08 }, { scale: 1.45, duration: 1.0, ease: "power3.inOut" }, 0.25);
+
+    // cursor tip = element top-left; screen coords after the push
+    tl.fromTo("#in-cursor", { x: 1500, y: 1150 }, { x: 419, y: 812, duration: 0.85, ease: "power3.out" }, 0.65);
+    tl.to("#in-cursor", { scale: 0.85, duration: 0.07, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 1.56);
+    tl.fromTo("#in-ring1", { scale: 0.3, opacity: 1 }, { scale: 1.4, opacity: 0, duration: 0.45, ease: "power2.out" }, 1.6);
+    tl.fromTo("#in-typed", { opacity: 0.4 }, { opacity: 1, duration: 0.15 }, 1.62);
+
+    tl.to("#in-cursor", { x: 969, y: 654, duration: 0.9, ease: "power3.inOut" }, 3.1);
+    tl.to("#in-cursor", { scale: 0.85, duration: 0.07, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 4.26);
+    tl.fromTo("#in-ring2", { scale: 0.3, opacity: 1 }, { scale: 1.4, opacity: 0, duration: 0.45, ease: "power2.out" }, 4.3);
+
+    // the click carries us through the button into the next screen
+    tl.to("#in-cam", { scale: 2.6, x: -420, duration: 0.55, ease: "power3.in" }, 4.75);
+    tl.to("#in-cursor", { opacity: 0, duration: 0.15 }, 4.75);
+    window.__timelines["input"] = tl;
+  </script>
+</template>

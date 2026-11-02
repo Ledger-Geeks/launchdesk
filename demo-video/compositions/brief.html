@@ -1,0 +1,97 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; }
+    #br-cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    #br-cam img { position: absolute; left: 0; top: 0; width: 1920px; }
+    #br-score-ring { position: absolute; left: 1059px; top: 413px; width: 160px; height: 160px; border: 5px solid #121212; border-radius: 50%; }
+    .br-cover { position: absolute; top: 660px; left: 614px; height: 12px; background: #ffffff; }
+    .br-bar { position: absolute; top: 660px; left: 614px; height: 12px; background: #ffd60a; border-right: 2px solid #121212; transform-origin: left center; }
+    #br-cursor { position: absolute; left: 0; top: 0; width: 56px; height: 70px; z-index: 5; }
+    .br-ring { position: absolute; width: 80px; height: 80px; margin: -40px 0 0 -40px; border: 6px solid #121212; border-radius: 50%; z-index: 4; }
+    #br-tag {
+      position: absolute; left: 1180px; top: 690px; z-index: 3;
+      padding: 14px 22px; background: #ff9ecf; border: 3px solid #121212; box-shadow: 6px 6px 0 #121212;
+      font-family: "Archivo Black", sans-serif; font-size: 30px; line-height: 1.15; color: #121212; text-transform: uppercase;
+    }
+    #br-tag small { display: block; margin-top: 4px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 28px; text-transform: none; }
+    #br-wipe { position: absolute; inset: 0; background: #ffd60a; transform-origin: left center; z-index: 6; }
+  </style>
+  <div id="root" data-composition-id="brief" data-width="1920" data-height="1080">
+    <div id="br-cam">
+      <img id="br-pitch" class="clip" data-start="0" data-duration="5.7" src="assets/shots/04-pitch-full.png" alt="" />
+      <div id="br-score-ring" class="clip" data-start="3.75" data-duration="0.7"></div>
+      <img id="br-market" class="clip" data-start="5.68" data-duration="5.36" src="assets/shots/05-market-full.png" alt="" />
+      <img id="br-fin" class="clip" data-start="11.02" data-duration="5.62" src="assets/shots/09-financials-full.png" alt="" />
+      <!-- the revenue bars draw in over their real fills -->
+      <div id="br-cover1" class="br-cover clip" data-start="11.02" data-duration="5.62" style="width: 114px"></div>
+      <div id="br-cover2" class="br-cover clip" data-start="11.02" data-duration="5.62" style="top: 722px; width: 315px"></div>
+      <div id="br-cover3" class="br-cover clip" data-start="11.02" data-duration="5.62" style="top: 784px; width: 486px"></div>
+      <div id="br-bar1" class="br-bar clip" data-start="11.02" data-duration="5.62" style="width: 114px"></div>
+      <div id="br-bar2" class="br-bar clip" data-start="11.02" data-duration="5.62" style="top: 722px; width: 315px"></div>
+      <div id="br-bar3" class="br-bar clip" data-start="11.02" data-duration="5.62" style="top: 784px; width: 486px"></div>
+      <img id="br-land" class="clip" data-start="16.62" data-duration="3.48" src="assets/shots/11-landing-page-full.png" alt="" />
+    </div>
+
+    <div id="br-tag" class="clip" data-start="14.55" data-duration="2">AI estimates<small>Verify before you act.</small></div>
+
+    <div id="br-ring1" class="br-ring clip" data-start="5.66" data-duration="0.5" style="left: 492px; top: 385px"></div>
+    <div id="br-ring2" class="br-ring clip" data-start="11" data-duration="0.5" style="left: 953px; top: 385px"></div>
+    <div id="br-ring3" class="br-ring clip" data-start="16.6" data-duration="0.5" style="left: 1228px; top: 385px"></div>
+    <svg id="br-cursor" class="clip" data-start="4.72" data-duration="12.25" viewBox="0 0 24 30">
+      <path d="M2 2 L2 24 L8 18.5 L12 27.5 L15.5 26 L11.5 17 L19.5 17 Z" fill="#121212" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round" />
+    </svg>
+    <div id="br-wipe" class="clip" data-start="19.72" data-duration="0.38"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // cam frames a focus point (fx, fy) at scale s in the screen centre
+    const frame = (fx, fy, s) => ({ x: 960 - fx * s, y: 540 - fy * s, scale: s });
+    const home = { x: 0, y: 0, scale: 1 };
+
+    // Pitch: score you can argue with, 82/100
+    tl.fromTo("#br-cam", { x: -40, y: -20, scale: 1.04, opacity: 0 }, { ...home, opacity: 1, duration: 0.4, ease: "power3.out" }, 0);
+    tl.to("#br-cam", { ...frame(960, 560, 1.25), duration: 1.1, ease: "power2.inOut" }, 0.6);
+    tl.to("#br-cam", { ...frame(1240, 560, 2.0), duration: 0.9, ease: "power3.inOut" }, 2.55);
+    tl.fromTo("#br-score-ring", { scale: 0.6, opacity: 1 }, { scale: 1.5, opacity: 0, duration: 0.6, ease: "power2.out" }, 3.75);
+    tl.to("#br-cam", { ...home, duration: 0.7, ease: "power3.inOut" }, 4.7);
+
+    // tab clicks: cursor arrives, presses, the panel swaps on the click frame
+    const click = (t) => tl.to("#br-cursor", { scale: 0.85, duration: 0.07, yoyo: true, repeat: 1, transformOrigin: "0 0" }, t - 0.04);
+    const ring = (id, t) => tl.fromTo(id, { scale: 0.3, opacity: 1 }, { scale: 1.4, opacity: 0, duration: 0.45, ease: "power2.out" }, t);
+    const swap = (id, t) => tl.fromTo(id, { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }, t);
+
+    tl.fromTo("#br-cursor", { x: 1300, y: 1150 }, { x: 492, y: 385, duration: 0.8, ease: "power3.out" }, 4.75);
+    click(5.66); ring("#br-ring1", 5.66); swap("#br-market", 5.68);
+
+    // Market: sizing, then segments and competitors
+    tl.to("#br-cursor", { x: 1500, y: 1000, opacity: 0, duration: 0.5, ease: "power2.in" }, 6.0);
+    tl.to("#br-cam", { ...frame(960, 503, 1.3), duration: 0.7, ease: "power3.inOut" }, 6.0);
+    tl.to("#br-cam", { ...frame(960, 760, 1.15), duration: 1.0, ease: "power2.inOut" }, 8.2);
+    tl.to("#br-cam", { ...home, duration: 0.6, ease: "power3.inOut" }, 10.15);
+
+    tl.to("#br-cursor", { x: 953, y: 385, opacity: 1, duration: 0.6, ease: "power3.out" }, 10.3);
+    click(11.0); ring("#br-ring2", 11.0); swap("#br-fin", 11.02);
+
+    // Financials: raise, breakeven, three years of revenue
+    tl.to("#br-cursor", { x: 1500, y: 1000, opacity: 0, duration: 0.5, ease: "power2.in" }, 11.2);
+    tl.to("#br-cam", { ...frame(960, 503, 1.3), duration: 0.7, ease: "power3.inOut" }, 11.2);
+    tl.to("#br-cam", { ...frame(900, 727, 1.55), duration: 0.8, ease: "power3.inOut" }, 12.6);
+    ["#br-bar1", "#br-bar2", "#br-bar3"].forEach((id, i) => {
+      tl.fromTo(id, { scaleX: 0 }, { scaleX: 1, duration: 0.6, ease: "power3.out" }, 13.3 + i * 0.25);
+    });
+    tl.fromTo("#br-tag", { scale: 1.3, rotation: -6, opacity: 0 }, { scale: 1, rotation: -2, opacity: 1, duration: 0.3, ease: "back.out(2.5)" }, 14.58);
+    tl.to("#br-tag", { opacity: 0, duration: 0.15 }, 16.38);
+    tl.to("#br-cam", { ...home, duration: 0.6, ease: "power3.inOut" }, 15.85);
+
+    tl.to("#br-cursor", { x: 1228, y: 385, opacity: 1, duration: 0.55, ease: "power3.out" }, 15.95);
+    click(16.6); ring("#br-ring3", 16.6); swap("#br-land", 16.62);
+
+    // Landing page: into the preview, scroll the draft
+    tl.to("#br-cursor", { x: 1600, y: 1100, opacity: 0, duration: 0.4, ease: "power2.in" }, 16.8);
+    tl.to("#br-cam", { x: -144, y: -200, scale: 1.15, duration: 0.7, ease: "power3.inOut" }, 16.8);
+    tl.to("#br-cam", { y: -430, duration: 2.2, ease: "power1.inOut" }, 17.5);
+
+    tl.fromTo("#br-wipe", { scaleX: 0 }, { scaleX: 1, duration: 0.36, ease: "power3.inOut" }, 19.72);
+    window.__timelines["brief"] = tl;
+  </script>
+</template>

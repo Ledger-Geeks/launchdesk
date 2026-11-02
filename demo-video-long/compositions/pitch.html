@@ -1,0 +1,33 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; color: #121212; }
+    .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; width: 1920px; }
+    .cursor { position: absolute; left: 0; top: 0; width: 56px; height: 70px; z-index: 5; }
+    .ring { position: absolute; width: 80px; height: 80px; margin: -40px 0 0 -40px; border: 6px solid #121212; border-radius: 50%; z-index: 4; }
+    .wipe { position: absolute; inset: 0; background: #ffd60a; z-index: 6; }
+    #pitch-ring82 { position: absolute; left: 1059px; top: 413px; width: 160px; height: 160px; border: 5px solid #121212; border-radius: 50%; }
+  </style>
+  <div id="root" data-composition-id="pitch" data-width="1920" data-height="1080">
+
+    <div id="pitch-cam" class="cam">
+      <img id="pitch-img" class="clip" data-start="0" data-duration="16.86" src="assets/shots/04-pitch-full.png" alt="" />
+      <div id="pitch-ring82" class="clip" data-start="8.67" data-duration="0.7"></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const frame = (fx, fy, s, h) => ({ x: 960 - fx * s, y: Math.min(0, Math.max(1080 - h * s, 540 - fy * s)), scale: s });
+
+    tl.fromTo("#pitch-cam", { x: -40, y: -20, scale: 1.04, opacity: 0 }, { x: 0, y: 0, scale: 1, opacity: 1, duration: 0.4, ease: "power3.out" }, 0);
+    tl.to("#pitch-cam", { ...frame(1240, 600, 1.35, 1756), duration: 0.8, ease: "power3.inOut" }, 3.64);
+    tl.to("#pitch-cam", { ...frame(1240, 560, 2, 1756), duration: 0.8, ease: "power3.inOut" }, 6.92);
+    tl.to("#pitch-cam", { ...frame(900, 900, 1.2, 1756), duration: 0.8, ease: "power3.inOut" }, 10.84);
+    tl.to("#pitch-cam", { ...frame(900, 1230, 1.2, 1756), duration: 0.8, ease: "power3.inOut" }, 12.52);
+    tl.to("#pitch-cam", { ...frame(900, 1500, 1.2, 1756), duration: 0.8, ease: "power3.inOut" }, 14.12);
+    tl.fromTo("#pitch-ring82", { scale: 0.6, opacity: 1 }, { scale: 1.5, opacity: 0, duration: 0.6, ease: "power2.out" }, 8.67);
+    // back to the top of the page so the next tab is in view
+    tl.to("#pitch-cam", { ...frame(960, 540, 1, 1756), duration: 0.6, ease: "power3.inOut" }, 16.16);
+    window.__timelines["pitch"] = tl;
+  </script>
+</template>

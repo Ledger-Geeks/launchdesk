@@ -1,0 +1,66 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; color: #121212; }
+    .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; width: 1920px; }
+    .cursor { position: absolute; left: 0; top: 0; width: 56px; height: 70px; z-index: 5; }
+    .ring { position: absolute; width: 80px; height: 80px; margin: -40px 0 0 -40px; border: 6px solid #121212; border-radius: 50%; z-index: 4; }
+    .wipe { position: absolute; inset: 0; background: #ffd60a; z-index: 6; }
+    #in-lines, #in-q { position: absolute; left: 220px; top: 250px; font-family: "Archivo Black", sans-serif; }
+    .big { font-size: 150px; line-height: 1.04; letter-spacing: -0.03em; white-space: nowrap; }
+    .w { display: inline-block; }
+    .hl { position: relative; display: inline-block; padding: 0 18px; }
+    .hl-bg { position: absolute; inset: 8px 0 0 0; background: #ffd60a; transform-origin: left center; }
+    .hl-tx { position: relative; }
+    #in-sub { margin-top: 40px; font-family: "Inter", sans-serif; font-weight: 700; font-size: 52px; color: #3a3a3a; }
+    #in-lock { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    #in-brand { display: flex; align-items: center; gap: 44px; }
+    #in-logo { width: 200px; height: 200px; }
+    #in-word { font-family: "Archivo Black", sans-serif; font-size: 140px; letter-spacing: -0.04em; text-transform: uppercase; }
+    #in-tag { margin-top: 56px; display: flex; gap: 28px; font-family: "Archivo Black", sans-serif; font-size: 56px; }
+    #in-tag span { padding: 10px 22px; border: 3px solid #121212; box-shadow: 6px 6px 0 #121212; background: #fff; }
+    #in-tag2 { background: #ffd60a !important; }
+    #in-wipe { transform-origin: left center; }
+  </style>
+  <div id="root" data-composition-id="intro" data-width="1920" data-height="1080">
+
+    <div id="in-lines" class="clip" data-start="0" data-duration="3.6">
+      <div class="big"><span class="w">Every startup idea</span></div>
+      <div class="big"><span class="w" id="in-w1">sounds</span> <span class="w hl" id="in-w2"><span class="hl-bg" id="in-m1"></span><span class="hl-tx">great</span></span></div>
+      <div class="big"><span class="w" id="in-w3">in your head.</span></div>
+    </div>
+    <div id="in-q" class="clip" data-start="4.96" data-duration="3.24">
+      <div class="big">Does it <span class="hl" id="in-q2"><span class="hl-bg" id="in-m2"></span><span class="hl-tx">hold up?</span></span></div>
+      <div id="in-sub">Before you spend months building it.</div>
+    </div>
+    <div id="in-lock" class="clip" data-start="8.30" data-duration="6.80">
+      <div id="in-brand">
+        <svg id="in-logo" viewBox="0 0 36 36"><rect id="in-shadow" x="6" y="6" width="28" height="28" fill="#121212" /><g id="in-tile"><rect x="2" y="2" width="28" height="28" fill="#FFD60A" stroke="#121212" stroke-width="3" /><path d="M16 7 L24 15.5 H19.5 V25 H12.5 V15.5 H8 Z" fill="#121212" /></g></svg>
+        <div id="in-word">LaunchDesk</div>
+      </div>
+      <div id="in-tag"><span id="in-tag1">Two sentences in.</span><span id="in-tag2">A full brief out.</span></div>
+    </div>
+    <div id="in-wipe" class="wipe clip" data-start="14.70" data-duration="0.4"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const frame = (fx, fy, s, h) => ({ x: 960 - fx * s, y: Math.min(0, Math.max(1080 - h * s, 540 - fy * s)), scale: s });
+
+    tl.fromTo("#in-lines", { scale: 1.08 }, { scale: 1, duration: 0.22, ease: "power2.out" }, 0);
+    [["#in-w1", 1.68], ["#in-w2", 2.16], ["#in-w3", 2.56]].forEach(([s, t]) => tl.fromTo(s, { opacity: 0, y: 60, rotation: 3 }, { opacity: 1, y: 0, rotation: 0, duration: 0.32, ease: "back.out(2.2)" }, t - 0.06));
+    tl.fromTo("#in-m1", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 2.2600000000000002);
+    tl.to("#in-lines", { y: -140, opacity: 0, duration: 0.22, ease: "power3.in" }, 3.3);
+    tl.fromTo("#in-q", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)" }, 4.96);
+    tl.fromTo("#in-m2", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 5.36);
+    tl.fromTo("#in-sub", { opacity: 0 }, { opacity: 1, duration: 0.4 }, 6.16);
+    tl.to("#in-q", { y: -140, opacity: 0, duration: 0.22, ease: "power3.in" }, 8.15);
+    tl.fromTo("#in-tile", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "bounce.out" }, 8.32);
+    tl.fromTo("#in-shadow", { opacity: 0 }, { opacity: 1, duration: 0.1 }, 8.540000000000001);
+    tl.fromTo("#in-word", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.5, ease: "power3.out" }, 8.540000000000001);
+    tl.fromTo("#in-tag1", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.35, ease: "back.out(2)" }, 9.96);
+    tl.fromTo("#in-tag2", { opacity: 0, y: 30, rotation: 0 }, { opacity: 1, y: 0, rotation: -2, duration: 0.35, ease: "back.out(2)" }, 11.44);
+    tl.fromTo("#in-lock", { scale: 1 }, { scale: 1.04, duration: 6.70, ease: "none" }, 8.4);
+    tl.fromTo("#in-wipe", { scaleX: 0 }, { scaleX: 1, duration: 0.36, ease: "power3.inOut" }, 14.70);
+    window.__timelines["intro"] = tl;
+  </script>
+</template>

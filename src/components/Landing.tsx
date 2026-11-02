@@ -1,3 +1,4 @@
+import { useEffect, type MouseEvent } from 'react'
 import { ArrowRight, PenLine, ScanSearch, FileText, Plus } from 'lucide-react'
 import { SECTIONS } from '../sections'
 import Hero from './Hero'
@@ -54,7 +55,21 @@ interface LandingProps {
   error: string
 }
 
+// ponytail: /start is a real path (vercel.json rewrites it to index.html), not a router.
+// Add a router if a second page appears.
+const scrollToStart = () => document.getElementById('start')?.scrollIntoView()
+
+function goToStart(e: MouseEvent<HTMLAnchorElement>) {
+  e.preventDefault()
+  if (location.pathname !== '/start') history.pushState(null, '', '/start')
+  scrollToStart()
+}
+
 export default function Landing({ onLaunch, error }: LandingProps) {
+  useEffect(() => {
+    if (location.pathname === '/start') scrollToStart()
+  }, [])
+
   return (
     <>
       <header className="border-b-3 border-ink bg-paper-card">
@@ -62,7 +77,7 @@ export default function Landing({ onLaunch, error }: LandingProps) {
           <Wordmark />
           <nav className="flex items-center gap-7 text-sm font-medium">
             {NAV.map(n => <a key={n.href} href={n.href} className="hidden text-ink underline-offset-4 hover:underline md:block">{n.label}</a>)}
-            <a href="#start" className="btn-brutal bg-accent px-4 py-2 text-xs shadow-brutal-sm">Start a brief</a>
+            <a href="/start" onClick={goToStart} className="btn-brutal bg-accent px-4 py-2 text-xs shadow-brutal-sm">Start a brief</a>
           </nav>
         </div>
       </header>
@@ -169,7 +184,7 @@ export default function Landing({ onLaunch, error }: LandingProps) {
         <section className="mx-auto max-w-7xl px-4 pb-24 md:px-8">
           <div className="grid gap-8 border-3 border-ink bg-accent px-6 py-14 shadow-brutal-lg md:grid-cols-[1.6fr_1fr] md:items-end md:px-12 md:py-16">
             <h2 className="max-w-[18ch] font-display text-4xl font-black leading-[0.95] md:text-6xl">Got an idea? Test it before you build it.</h2>
-            <a href="#start" className="btn-brutal justify-self-start bg-paper-card md:justify-self-end">
+            <a href="/start" onClick={goToStart} className="btn-brutal justify-self-start bg-paper-card md:justify-self-end">
               Start a brief <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
             </a>
           </div>

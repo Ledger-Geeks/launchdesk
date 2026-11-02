@@ -66,8 +66,8 @@
 ### Run Locally
 
 ```bash
-git clone https://github.com/Adithya17-star/startup-copilot.git
-cd startup-copilot
+git clone https://github.com/Minhalrizvi12/launchdesk.git
+cd launchdesk
 npm install
 cp .env.example .env.local   # then add your OPENAI_API_KEY
 npm run dev
@@ -90,7 +90,7 @@ Import the repo in Vercel, then set `OPENAI_API_KEY` (and optionally `OPENAI_MOD
 ## 📁 Project Structure
 
 ```text
-startup-copilot/
+launchdesk/
 ├── api/
 │   └── blueprint.ts        # server: key, prompt, validation, rate limit
 ├── scripts/
@@ -148,6 +148,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 <div align="center">
 
-Made with ❤️ by [Adithya17-star](https://github.com/Adithya17-star)
+Made with ❤️ by [LedgerGeeks](https://ledgergeeks.io)
 
 </div>

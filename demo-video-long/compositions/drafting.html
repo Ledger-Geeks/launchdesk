@@ -1,0 +1,36 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; color: #121212; }
+    .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; width: 1920px; }
+    .cursor { position: absolute; left: 0; top: 0; width: 56px; height: 70px; z-index: 5; }
+    .ring { position: absolute; width: 80px; height: 80px; margin: -40px 0 0 -40px; border: 6px solid #121212; border-radius: 50%; z-index: 4; }
+    .wipe { position: absolute; inset: 0; background: #ffd60a; z-index: 6; }
+    #dr-cam { transform-origin: 450px 650px; }
+    #dr-cam img { height: 1080px; }
+    .hl { position: absolute; left: 374px; height: 28px; background: #ffd60a; mix-blend-mode: multiply; transform-origin: left center; }
+  </style>
+  <div id="root" data-composition-id="drafting" data-width="1920" data-height="1080">
+
+    <div id="dr-cam" class="cam">
+      <img id="dr-a" class="clip" data-start="0" data-duration="1.7" src="assets/shots/03-loading.png" alt="" />
+      <img id="dr-b" class="clip" data-start="1.5" data-duration="5.82" src="assets/shots/03-loading-b.png" alt="" />
+      <div id="dr-h0" class="hl clip" data-start="3.15" data-duration="4.17" style="top: 560px; width: 128px"></div>
+      <div id="dr-h1" class="hl clip" data-start="3.87" data-duration="3.45" style="top: 624px; width: 156px"></div>
+      <div id="dr-h2" class="hl clip" data-start="4.83" data-duration="2.49" style="top: 688px; width: 143px"></div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const frame = (fx, fy, s, h) => ({ x: 960 - fx * s, y: Math.min(0, Math.max(1080 - h * s, 540 - fy * s)), scale: s });
+
+    tl.fromTo("#dr-cam", { scale: 1.25, opacity: 0.2 }, { scale: 1, opacity: 1, duration: 0.45, ease: "power3.out" }, 0);
+    tl.fromTo("#dr-b", { opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.5);
+    tl.to("#dr-cam", { scale: 1.75, duration: 1.1, ease: "power3.inOut" }, 1.0);
+    tl.fromTo("#dr-h0", { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: "power2.out" }, 3.15);
+    tl.fromTo("#dr-h1", { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: "power2.out" }, 3.87);
+    tl.fromTo("#dr-h2", { scaleX: 0 }, { scaleX: 1, duration: 0.25, ease: "power2.out" }, 4.83);
+    tl.to("#dr-cam", { scale: 2.3, opacity: 0, duration: 0.3, ease: "power3.in" }, 7.00);
+    window.__timelines["drafting"] = tl;
+  </script>
+</template>

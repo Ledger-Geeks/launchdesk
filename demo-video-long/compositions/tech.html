@@ -1,0 +1,37 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; color: #121212; }
+    .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; width: 1920px; }
+    .cursor { position: absolute; left: 0; top: 0; width: 56px; height: 70px; z-index: 5; }
+    .ring { position: absolute; width: 80px; height: 80px; margin: -40px 0 0 -40px; border: 6px solid #121212; border-radius: 50%; z-index: 4; }
+    .wipe { position: absolute; inset: 0; background: #ffd60a; z-index: 6; }
+  </style>
+  <div id="root" data-composition-id="tech" data-width="1920" data-height="1080">
+
+    <div id="tech-cam" class="cam">
+      <img id="tech-prev" class="clip" data-start="0" data-duration="0.47000000000000003" src="assets/shots/07-roadmap-full.png" alt="" />
+      <img id="tech-img" class="clip" data-start="0.45" data-duration="10.73" src="assets/shots/08-tech-stack-full.png" alt="" />
+
+    </div>
+    <div id="tech-ring" class="ring clip" data-start="0.45" data-duration="0.5" style="left: 830px; top: 385px"></div>
+    <svg id="tech-cursor" class="cursor clip" data-start="0" data-duration="1.2" viewBox="0 0 24 30"><path d="M2 2 L2 24 L8 18.5 L12 27.5 L15.5 26 L11.5 17 L19.5 17 Z" fill="#121212" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round" /></svg>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const frame = (fx, fy, s, h) => ({ x: 960 - fx * s, y: Math.min(0, Math.max(1080 - h * s, 540 - fy * s)), scale: s });
+
+    tl.fromTo("#tech-cursor", { x: 1500, y: 950, opacity: 0 }, { x: 830, y: 385, opacity: 1, duration: 0.4, ease: "power3.out" }, 0);
+    tl.to("#tech-cursor", { scale: 0.85, duration: 0.07, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 0.41000000000000003);
+    tl.fromTo("#tech-ring", { scale: 0.3, opacity: 1 }, { scale: 1.4, opacity: 0, duration: 0.45, ease: "power2.out" }, 0.45);
+    tl.fromTo("#tech-img", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }, 0.45);
+    tl.to("#tech-cursor", { x: 1600, y: 1100, opacity: 0, duration: 0.45, ease: "power2.in" }, 0.7);
+    tl.to("#tech-cam", { ...frame(960, 820, 1, 1931), duration: 0.8, ease: "power3.inOut" }, 1.58);
+    tl.to("#tech-cam", { ...frame(960, 1250, 1.2, 1931), duration: 0.8, ease: "power3.inOut" }, 4.14);
+    tl.to("#tech-cam", { ...frame(960, 1560, 1.2, 1931), duration: 0.8, ease: "power3.inOut" }, 8.62);
+
+    // back to the top of the page so the next tab is in view
+    tl.to("#tech-cam", { ...frame(960, 540, 1, 1931), duration: 0.6, ease: "power3.inOut" }, 10.48);
+    window.__timelines["tech"] = tl;
+  </script>
+</template>

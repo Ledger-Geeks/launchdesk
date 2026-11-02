@@ -1,0 +1,1421 @@
+{
+  "version": 1,
+  "historyId": "97c52be4-9515-429c-b31b-4fc1480ee6d4",
+  "currentRevision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\26\\26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "CLAUDE.md": {
+      "hash": "26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\26\\26e43c63a41e1ba38ba287bea1af2795c55ba2e3787d3a635c062c3a8a9818f4"
+    },
+    "assets/sfx/click-soft.mp3": {
+      "hash": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\07\\075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d"
+    },
+    "assets/sfx/click.mp3": {
+      "hash": "075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\07\\075e17bdac5c13662a1c9530050e0046f81d4138e00eb3bf30427a7b4404103d"
+    },
+    "assets/sfx/impact-bass-1.mp3": {
+      "hash": "634d5eda5eb7b501aca98393a64f3815eccf24157cd1d95df55aaec1b5000bd7",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\63\\634d5eda5eb7b501aca98393a64f3815eccf24157cd1d95df55aaec1b5000bd7"
+    },
+    "assets/sfx/pop.mp3": {
+      "hash": "19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\19\\19ab7193f626ff57fdeef60b45543bac416fcbcec803cfb417abe4b271c1b352"
+    },
+    "assets/sfx/riser.mp3": {
+      "hash": "d2f29d49f27dee7d3b25af22ffe5bebc39390cc5d5fb3b3e1c433499c77f3d1d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\d2\\d2f29d49f27dee7d3b25af22ffe5bebc39390cc5d5fb3b3e1c433499c77f3d1d"
+    },
+    "assets/sfx/whoosh-short.mp3": {
+      "hash": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\c2\\c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+    },
+    "assets/sfx/whoosh.mp3": {
+      "hash": "c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\c2\\c2efd9d902a59bf9ec5019035d7deadd17762136896b6e3cb6dd99ea50997a30"
+    },
+    "assets/shots/01-hero.png": {
+      "hash": "7b486c0fc763be09f6dc298686ad406a385f9b61a948af931c8987d10eba1e28",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\7b\\7b486c0fc763be09f6dc298686ad406a385f9b61a948af931c8987d10eba1e28"
+    },
+    "assets/shots/01-landing-full.png": {
+      "hash": "5bed5298c6bd3bf3015f782bb5497fcb813e16e2f675452c994eccb68ff96c18",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\5b\\5bed5298c6bd3bf3015f782bb5497fcb813e16e2f675452c994eccb68ff96c18"
+    },
+    "assets/shots/02-typed.png": {
+      "hash": "16d9c5cb271fb6ee5f142a8913b6e6fb97b079b9c835689118a842e2f3fc2f37",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\16\\16d9c5cb271fb6ee5f142a8913b6e6fb97b079b9c835689118a842e2f3fc2f37"
+    },
+    "assets/shots/03-loading-b.png": {
+      "hash": "d2f533bd924463dbdb0af31aaa8d699e9baf2f0512962c7380ae11ec11fdb3b4",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\d2\\d2f533bd924463dbdb0af31aaa8d699e9baf2f0512962c7380ae11ec11fdb3b4"
+    },
+    "assets/shots/03-loading.png": {
+      "hash": "b82a2d45f700dbd64cdded5da9743798b65f73997dd40c5886e317f97e63b44b",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\b8\\b82a2d45f700dbd64cdded5da9743798b65f73997dd40c5886e317f97e63b44b"
+    },
+    "assets/shots/04-pitch-full.png": {
+      "hash": "82ec078bf9a28017cd65c24971bfb607f6d0919c233d55551ece03031a4d4535",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\82\\82ec078bf9a28017cd65c24971bfb607f6d0919c233d55551ece03031a4d4535"
+    },
+    "assets/shots/04-pitch.png": {
+      "hash": "5dc9ab59a19091201fb7cd43af67941be05bc1c134c39242d74e08f9ea25bb46",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\5d\\5dc9ab59a19091201fb7cd43af67941be05bc1c134c39242d74e08f9ea25bb46"
+    },
+    "assets/shots/05-market-full.png": {
+      "hash": "913db28229500871fa0541ad2a899d02ce01717575c2b6beddbc00b10152a66d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\91\\913db28229500871fa0541ad2a899d02ce01717575c2b6beddbc00b10152a66d"
+    },
+    "assets/shots/05-market.png": {
+      "hash": "7b006c23b01753822d28de922c4c65eb998f304f3987f8f28f75801108217004",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\7b\\7b006c23b01753822d28de922c4c65eb998f304f3987f8f28f75801108217004"
+    },
+    "assets/shots/06-product-full.png": {
+      "hash": "967c69f568b711a6b27b7b1aeb89a1b93a105a786d21a4d5ace9ecf75e7ac652",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\96\\967c69f568b711a6b27b7b1aeb89a1b93a105a786d21a4d5ace9ecf75e7ac652"
+    },
+    "assets/shots/06-product.png": {
+      "hash": "1bad766da32b5ce08e9eba18a73eacf90c6d92950d15021ec28a15ff58fa785b",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\1b\\1bad766da32b5ce08e9eba18a73eacf90c6d92950d15021ec28a15ff58fa785b"
+    },
+    "assets/shots/07-roadmap-full.png": {
+      "hash": "1198edc40efa81db65e0e3ca978f747933e0533baddd0c02bd0335d42635bfc1",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\11\\1198edc40efa81db65e0e3ca978f747933e0533baddd0c02bd0335d42635bfc1"
+    },
+    "assets/shots/07-roadmap.png": {
+      "hash": "52beb3cf9ff960731d7e8644f12feda6845bb914a425b88d98a1e5d2df7b856d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\52\\52beb3cf9ff960731d7e8644f12feda6845bb914a425b88d98a1e5d2df7b856d"
+    },
+    "assets/shots/08-tech-stack-full.png": {
+      "hash": "2f8e95f70ab5cdc90b4094cfb62f0023ef0b0f4dae786eeb286991839b3e037b",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\2f\\2f8e95f70ab5cdc90b4094cfb62f0023ef0b0f4dae786eeb286991839b3e037b"
+    },
+    "assets/shots/08-tech-stack.png": {
+      "hash": "9cd86b6830895162120f133afa05efa68f7211bdba0d619feb7d943091e155d6",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\9c\\9cd86b6830895162120f133afa05efa68f7211bdba0d619feb7d943091e155d6"
+    },
+    "assets/shots/09-financials-full.png": {
+      "hash": "e68481c1a9d1cdd9a5f90789af87ec848c515dff48b0bfdb4757206928664032",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\e6\\e68481c1a9d1cdd9a5f90789af87ec848c515dff48b0bfdb4757206928664032"
+    },
+    "assets/shots/09-financials.png": {
+      "hash": "c7417ef7e946c19dcb1d13c4c80a867c5a20abe12e59ded6fac37629592fc0ae",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\c7\\c7417ef7e946c19dcb1d13c4c80a867c5a20abe12e59ded6fac37629592fc0ae"
+    },
+    "assets/shots/10-go-to-market-full.png": {
+      "hash": "91ec75ff4881ff8adbe890b785077567c89fcef292ecc90c85cd5e907accfb36",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\91\\91ec75ff4881ff8adbe890b785077567c89fcef292ecc90c85cd5e907accfb36"
+    },
+    "assets/shots/10-go-to-market.png": {
+      "hash": "f7729d028260061c9a80256347d2ab944ee47936aea4556a1ff755ddf37239f4",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\f7\\f7729d028260061c9a80256347d2ab944ee47936aea4556a1ff755ddf37239f4"
+    },
+    "assets/shots/11-landing-page-full.png": {
+      "hash": "69ef2caa4f7d585aaf806200702a6a2f6f053201f274b34684fda8ab26bcc686",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\69\\69ef2caa4f7d585aaf806200702a6a2f6f053201f274b34684fda8ab26bcc686"
+    },
+    "assets/shots/11-landing-page.png": {
+      "hash": "cf5181e6cbfe105b097e56f4346c8b4ea26db110a07d3f9aafb7a3b73f9b371d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\cf\\cf5181e6cbfe105b097e56f4346c8b4ea26db110a07d3f9aafb7a3b73f9b371d"
+    },
+    "assets/transcript.json": {
+      "hash": "77b5ff63aafc0ba64247112c813ee910c09548e311e88daf1350792ba8aed7d1",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\77\\77b5ff63aafc0ba64247112c813ee910c09548e311e88daf1350792ba8aed7d1"
+    },
+    "assets/vo/l1.wav": {
+      "hash": "e526200e5067eb007ba80a35fd512235a7dc8204b1470d26d17483a83287a698",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\e5\\e526200e5067eb007ba80a35fd512235a7dc8204b1470d26d17483a83287a698"
+    },
+    "assets/vo/l2.wav": {
+      "hash": "5890f36a9349949663d8d9bcf55c9b10f16a7b6e053f0a11d35d4a5cc9b8f425",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\58\\5890f36a9349949663d8d9bcf55c9b10f16a7b6e053f0a11d35d4a5cc9b8f425"
+    },
+    "assets/vo/l3.wav": {
+      "hash": "58d46e984bb117a629607c812f494874d903156a800889b918efa457cab32de2",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\58\\58d46e984bb117a629607c812f494874d903156a800889b918efa457cab32de2"
+    },
+    "assets/vo/l4.wav": {
+      "hash": "705b8df550236d0c2ba0e2f255580da9eb45b246ceb081e92bf1d36fa78686e9",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\70\\705b8df550236d0c2ba0e2f255580da9eb45b246ceb081e92bf1d36fa78686e9"
+    },
+    "assets/vo/l5.wav": {
+      "hash": "7672c3e16a3e0395e6e0019fe7bd97522ca1046d506ee57b4e633236b256bee0",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\76\\7672c3e16a3e0395e6e0019fe7bd97522ca1046d506ee57b4e633236b256bee0"
+    },
+    "assets/vo/l6.wav": {
+      "hash": "afc4101009d213c2de4bb3f0d3d38449b099be44cba294d8c3fc244b55f52552",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\af\\afc4101009d213c2de4bb3f0d3d38449b099be44cba294d8c3fc244b55f52552"
+    },
+    "assets/vo/l7.wav": {
+      "hash": "24ca3e123e59f4bf66077b8060a30068c825bae4a904bc77ec44feebdd10dd12",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\24\\24ca3e123e59f4bf66077b8060a30068c825bae4a904bc77ec44feebdd10dd12"
+    },
+    "assets/vo/l8.wav": {
+      "hash": "e5291ca2dc691d548189472069068cb50a00a0d541dd313ed0e5335ad40cae10",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\e5\\e5291ca2dc691d548189472069068cb50a00a0d541dd313ed0e5335ad40cae10"
+    },
+    "assets/vo/lines.txt": {
+      "hash": "13634d0113958fcea84fb6604655ae144c486ada67f31bcafb84237e258125d1",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\13\\13634d0113958fcea84fb6604655ae144c486ada67f31bcafb84237e258125d1"
+    },
+    "compositions/brief.html": {
+      "hash": "814897f69b1c9ec4b8ed4d33602013147c4b03c68582c44047dd167b65a8272d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\81\\814897f69b1c9ec4b8ed4d33602013147c4b03c68582c44047dd167b65a8272d"
+    },
+    "compositions/captions.html": {
+      "hash": "ab27cb762979ddc9e19549f6aa149290ce5f65abc40edaeb9fb60c3bd80907c0",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\ab\\ab27cb762979ddc9e19549f6aa149290ce5f65abc40edaeb9fb60c3bd80907c0"
+    },
+    "compositions/drafting.html": {
+      "hash": "cdfcdfaa4f488d8ffc15c45f2d9d398965b916ff4f7064b0a49fb7af7366a0ca",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\cd\\cdfcdfaa4f488d8ffc15c45f2d9d398965b916ff4f7064b0a49fb7af7366a0ca"
+    },
+    "compositions/endcard.html": {
+      "hash": "d74aef98345cade7007b38887377850e24c4ed9d04792ab30ea6b79deed8b1ba",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\d7\\d74aef98345cade7007b38887377850e24c4ed9d04792ab30ea6b79deed8b1ba"
+    },
+    "compositions/hook.html": {
+      "hash": "e47f926c4e37a9a608bf95486c0ff3e1c3eeb059061c2eaa3571f66ffdcf446d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\e4\\e47f926c4e37a9a608bf95486c0ff3e1c3eeb059061c2eaa3571f66ffdcf446d"
+    },
+    "compositions/input.html": {
+      "hash": "07805226519e4cbbbbcaaad9571e7ca94327e37689fae48c78d3ecb47017238d",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\07\\07805226519e4cbbbbcaaad9571e7ca94327e37689fae48c78d3ecb47017238d"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\35\\35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "1dc6a7f703dcdab80269328970c7b5136c1f5886cbfe162cd1223d18d3f460e2",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\1d\\1dc6a7f703dcdab80269328970c7b5136c1f5886cbfe162cd1223d18d3f460e2"
+    },
+    "meta.json": {
+      "hash": "c8ac22e0dc9bf79e3037e431ab345e0c541d18a2d03eaa5c08852c8a0fa23ccb",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\c8\\c8ac22e0dc9bf79e3037e431ab345e0c541d18a2d03eaa5c08852c8a0fa23ccb"
+    },
+    "package.json": {
+      "hash": "29c02399c5ddd51f8ec275dae0846cf95165e5b3f15ce186e086fcf773ceec3a",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\29\\29c02399c5ddd51f8ec275dae0846cf95165e5b3f15ce186e086fcf773ceec3a"
+    },
+    "assets/voiceover.wav": {
+      "hash": "12e6f1fb5ee2ef34d77d5c7422240bf701d5df9d0eb2c1ab5581369b9b1473b7",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\12\\12e6f1fb5ee2ef34d77d5c7422240bf701d5df9d0eb2c1ab5581369b9b1473b7"
+    },
+    "scripts-build-captions.cjs": {
+      "hash": "73f16776db48d109f3e52d8627821901a618a9312fae249a2dd8eda6d58645fa",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\73\\73f16776db48d109f3e52d8627821901a618a9312fae249a2dd8eda6d58645fa"
+    },
+    "assets/sfx/CREDITS.md": {
+      "hash": "79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\79\\79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce"
+    },
+    "assets/transcript-kokoro.json": {
+      "hash": "43350fa410113d0eaad2f7a816fda0ae06197d0e5d47a7c018398a5092ede51b",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\43\\43350fa410113d0eaad2f7a816fda0ae06197d0e5d47a7c018398a5092ede51b"
+    },
+    "assets/vo-el/l1.mp3": {
+      "hash": "1a2a7f6b2632bb85dc7fb6c6b1c3dac00d7d683bf3813e62f72446e9776164bc",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\1a\\1a2a7f6b2632bb85dc7fb6c6b1c3dac00d7d683bf3813e62f72446e9776164bc"
+    },
+    "assets/vo-el/l2.mp3": {
+      "hash": "153c3a7c232ce572e7e18305fc10943755268fdedd7af3606acc6c3024dc5198",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\15\\153c3a7c232ce572e7e18305fc10943755268fdedd7af3606acc6c3024dc5198"
+    },
+    "assets/vo-el/l3.mp3": {
+      "hash": "cd5debd93443645fdd97093165bdf8389df3d98f1d0bec8ebd3447e5da7233c0",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\cd\\cd5debd93443645fdd97093165bdf8389df3d98f1d0bec8ebd3447e5da7233c0"
+    },
+    "assets/vo-el/l4.mp3": {
+      "hash": "60bb43904f1aa8bf332d374bd2c90396a4f9cf14a1a6b1a67c922a5c723b4796",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\60\\60bb43904f1aa8bf332d374bd2c90396a4f9cf14a1a6b1a67c922a5c723b4796"
+    },
+    "assets/vo-el/l5.mp3": {
+      "hash": "bc0e06ea11535ef56f54b3d496cc7f39bfdc7f0c45bb8676ea1900d00bd5c6bf",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\bc\\bc0e06ea11535ef56f54b3d496cc7f39bfdc7f0c45bb8676ea1900d00bd5c6bf"
+    },
+    "assets/vo-el/l6.mp3": {
+      "hash": "27c0dec809d228d1b118a43376dbd27e53d2ba74a990c1de0d8b0f0d316fe3c7",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\27\\27c0dec809d228d1b118a43376dbd27e53d2ba74a990c1de0d8b0f0d316fe3c7"
+    },
+    "assets/vo-el/l7.mp3": {
+      "hash": "ff98906c6877adc6d308bfe8ba22ebf789f98b3e32f71266179566cbdb9943ff",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\ff\\ff98906c6877adc6d308bfe8ba22ebf789f98b3e32f71266179566cbdb9943ff"
+    },
+    "assets/vo-el/l8.mp3": {
+      "hash": "1f5d2841e493a81067f963c665af361f7c468c7de5936d93b2272275c102303b",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\1f\\1f5d2841e493a81067f963c665af361f7c468c7de5936d93b2272275c102303b"
+    },
+    "assets/vo-windows/compare_kokoro_then_zira.wav": {
+      "hash": "34fd5f93a4f7b37c7aa998f72bd3f6e20d90c22a3e4754f43a59ea7162883cd6",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\34\\34fd5f93a4f7b37c7aa998f72bd3f6e20d90c22a3e4754f43a59ea7162883cd6"
+    },
+    "assets/vo-windows/zira-sample.wav": {
+      "hash": "f94b0f5851cfa7e2bee4140835018cec9e01c41cfef3c88c6087fbc0c21321d9",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\f9\\f94b0f5851cfa7e2bee4140835018cec9e01c41cfef3c88c6087fbc0c21321d9"
+    },
+    "assets/voiceover-el.wav": {
+      "hash": "c8e56a414839809cd2db2c162c4bb6ce9f44724f975b600fe6f39dba822c3db1",
+      "content": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\c8\\c8e56a414839809cd2db2c162c4bb6ce9f44724f975b600fe6f39dba822c3db1"
+    }
+  },
+  "revisions": {
+    "396d3b42-15f0-483d-bc7d-12cea7dcc6b4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793652355779,
+      "endedAt": 1793652355856,
+      "files": {
+        "compositions/brief.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\e3\\e3014b3f7093e07ef5980c66bf8f09278bcf252259cf104b677bfeece8ac57b1",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\9a\\9a6666008ae18af5ca396f4f12b050b1c00e54d6c633fe17051fdc9f46869abb"
+        },
+        "compositions/captions.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\8d\\8d8e73d1135388550c3563d5493a321cf3186f0221a06bd856c5aaaeebd77b4b",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\b0\\b0354678f1d6c610de43e8c0bfd076dfef55503b8a4ae2b3193e3d7c89f52cec"
+        },
+        "compositions/endcard.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\59\\598becf811c1edd933316ac445b50cc74a202d262c19e25eedb18b40ec63fc41",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\15\\15cf65a5b139dfe0502886d4eac43592b8067a13d9761f306ae3c427597ccc9d"
+        },
+        "compositions/hook.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\c2\\c2961a0b614d6337fd27af2db00c684984eaa9a12f2f541e9dce815fc327001d",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\6f\\6f4da69615775b1e1c4f1db4b6bac51c7c21c8cb115310c58fda17a88defd0cc"
+        }
+      }
+    },
+    "c9786fc8-232e-4c0c-b61d-4ff3992a38cd": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793652460775,
+      "endedAt": 1793652460911,
+      "files": {
+        "compositions/brief.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\9a\\9a6666008ae18af5ca396f4f12b050b1c00e54d6c633fe17051fdc9f46869abb",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\22\\22c799b7b66a9320d25f4be1e8432e0226b75ca0afbfb8169835bfbdbf546912"
+        },
+        "compositions/endcard.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\15\\15cf65a5b139dfe0502886d4eac43592b8067a13d9761f306ae3c427597ccc9d",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\36\\3659f4da61205d882fee57ba2d00cee8e9a44d839f7f5c3e4beb16559cbbb752"
+        },
+        "compositions/hook.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\6f\\6f4da69615775b1e1c4f1db4b6bac51c7c21c8cb115310c58fda17a88defd0cc",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\83\\83219600a4eb3a7c5e615ac5adcc781028256eb45ce1a798e5ed6825113d03b8"
+        },
+        "index.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\a8\\a82f1e0de6527d4740c6855f902cdbbab5e308739d09779370fed42ab003a6a6",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\30\\306edb0ec631cb76f08ae2208117d3e0646bbce1c1f6467e33806fdb95422e6d"
+        }
+      }
+    },
+    "58cf0629-253f-4463-94b9-fb11347ff6ac": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793652530135,
+      "endedAt": 1793652530138,
+      "files": {
+        "compositions/input.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\4f\\4f389b7471233d052396c89caf178c5b0d68afe415e984af1e0cc8a7ceeb7120",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\07\\07805226519e4cbbbbcaaad9571e7ca94327e37689fae48c78d3ecb47017238d"
+        }
+      }
+    },
+    "7f339562-7322-41aa-9524-113b66a3e3b9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793652561475,
+      "endedAt": 1793652561638,
+      "files": {
+        "compositions/captions.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\b0\\b0354678f1d6c610de43e8c0bfd076dfef55503b8a4ae2b3193e3d7c89f52cec",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\72\\72fde27ada9d3ccbed777f333f41c37a05a1bb47b150e53d4947d1508b75eefd"
+        },
+        "compositions/endcard.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\36\\3659f4da61205d882fee57ba2d00cee8e9a44d839f7f5c3e4beb16559cbbb752",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\0e\\0eb3749b762620792e7f13a8ffaa0bce7df4f155dc1e7b0e2995f09f9501ab77"
+        },
+        "scripts-build-captions.cjs": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\ac\\acc23aaeaea31997ba970fc4eefd9de3c89153ba64393d0b708749c24104e1fe"
+        }
+      }
+    },
+    "e048b3eb-d3a0-4790-a745-24d29e26aeed": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1793653583995,
+      "endedAt": 1793653585500,
+      "files": {
+        "assets/sfx/CREDITS.md": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\79\\79590c7738b0427b10f362f76b02cfd2643158a40e1d5fd787f9ac6b33bcf4ce"
+        },
+        "assets/transcript-kokoro.json": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\43\\43350fa410113d0eaad2f7a816fda0ae06197d0e5d47a7c018398a5092ede51b"
+        },
+        "assets/transcript.json": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\43\\43350fa410113d0eaad2f7a816fda0ae06197d0e5d47a7c018398a5092ede51b",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\77\\77b5ff63aafc0ba64247112c813ee910c09548e311e88daf1350792ba8aed7d1"
+        },
+        "assets/vo-el/l1.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\1a\\1a2a7f6b2632bb85dc7fb6c6b1c3dac00d7d683bf3813e62f72446e9776164bc"
+        },
+        "assets/vo-el/l2.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\15\\153c3a7c232ce572e7e18305fc10943755268fdedd7af3606acc6c3024dc5198"
+        },
+        "assets/vo-el/l3.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\cd\\cd5debd93443645fdd97093165bdf8389df3d98f1d0bec8ebd3447e5da7233c0"
+        },
+        "assets/vo-el/l4.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\60\\60bb43904f1aa8bf332d374bd2c90396a4f9cf14a1a6b1a67c922a5c723b4796"
+        },
+        "assets/vo-el/l5.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\bc\\bc0e06ea11535ef56f54b3d496cc7f39bfdc7f0c45bb8676ea1900d00bd5c6bf"
+        },
+        "assets/vo-el/l6.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\27\\27c0dec809d228d1b118a43376dbd27e53d2ba74a990c1de0d8b0f0d316fe3c7"
+        },
+        "assets/vo-el/l7.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\ff\\ff98906c6877adc6d308bfe8ba22ebf789f98b3e32f71266179566cbdb9943ff"
+        },
+        "assets/vo-el/l8.mp3": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\1f\\1f5d2841e493a81067f963c665af361f7c468c7de5936d93b2272275c102303b"
+        },
+        "assets/vo-windows/compare_kokoro_then_zira.wav": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\34\\34fd5f93a4f7b37c7aa998f72bd3f6e20d90c22a3e4754f43a59ea7162883cd6"
+        },
+        "assets/vo-windows/zira-sample.wav": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\f9\\f94b0f5851cfa7e2bee4140835018cec9e01c41cfef3c88c6087fbc0c21321d9"
+        },
+        "assets/voiceover-el.wav": {
+          "before": null,
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\c8\\c8e56a414839809cd2db2c162c4bb6ce9f44724f975b600fe6f39dba822c3db1"
+        },
+        "compositions/brief.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\22\\22c799b7b66a9320d25f4be1e8432e0226b75ca0afbfb8169835bfbdbf546912",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\81\\814897f69b1c9ec4b8ed4d33602013147c4b03c68582c44047dd167b65a8272d"
+        },
+        "compositions/captions.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\72\\72fde27ada9d3ccbed777f333f41c37a05a1bb47b150e53d4947d1508b75eefd",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\ab\\ab27cb762979ddc9e19549f6aa149290ce5f65abc40edaeb9fb60c3bd80907c0"
+        },
+        "compositions/drafting.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\ba\\ba86973286cd3a74bec3b95f852829b27c747eeb80ceec0ffbfcc8fb86d1d04a",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\cd\\cdfcdfaa4f488d8ffc15c45f2d9d398965b916ff4f7064b0a49fb7af7366a0ca"
+        },
+        "compositions/endcard.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\0e\\0eb3749b762620792e7f13a8ffaa0bce7df4f155dc1e7b0e2995f09f9501ab77",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\d7\\d74aef98345cade7007b38887377850e24c4ed9d04792ab30ea6b79deed8b1ba"
+        },
+        "compositions/hook.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\83\\83219600a4eb3a7c5e615ac5adcc781028256eb45ce1a798e5ed6825113d03b8",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\e4\\e47f926c4e37a9a608bf95486c0ff3e1c3eeb059061c2eaa3571f66ffdcf446d"
+        },
+        "index.html": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\30\\306edb0ec631cb76f08ae2208117d3e0646bbce1c1f6467e33806fdb95422e6d",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\1d\\1dc6a7f703dcdab80269328970c7b5136c1f5886cbfe162cd1223d18d3f460e2"
+        },
+        "scripts-build-captions.cjs": {
+          "before": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\ac\\acc23aaeaea31997ba970fc4eefd9de3c89153ba64393d0b708749c24104e1fe",
+          "after": "C:\\Users\\Asus\\.cache\\hyperframes\\history\\97c52be4-9515-429c-b31b-4fc1480ee6d4\\blobs\\73\\73f16776db48d109f3e52d8627821901a618a9312fae249a2dd8eda6d58645fa"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+      "id": "dfd842f7-7493-4665-9952-e8b03f214512"
+    },
+    "revisions": {
+      "396d3b42-15f0-483d-bc7d-12cea7dcc6b4": [
+        {
+          "id": "b998d632-71da-4482-a8f7-ad6c501af11a",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793652368006,
+          "contentHash": "d46beb83889cad5460a6bd0ae9766e0b2eaf17d523fbccd609785058ee79457f",
+          "revision": "396d3b42-15f0-483d-bc7d-12cea7dcc6b4",
+          "inputFingerprint": "55c0cba74eef5fc6c09a5c6d37c90c314dd86290769a2569fce4274dfcb1110e",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "449d66d5-389a-4004-a63b-273e4a76af07"
+        }
+      ],
+      "c9786fc8-232e-4c0c-b61d-4ff3992a38cd": [
+        {
+          "id": "7cfc4b57-8be8-4f79-b81b-7a253daf16b8",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793652470405,
+          "contentHash": "3a3309ff612f01d3ddc1e239b88b8383078f82f3d79f50129a8629012df1a08a",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "449d66d5-389a-4004-a63b-273e4a76af07"
+        }
+      ],
+      "7f339562-7322-41aa-9524-113b66a3e3b9": [
+        {
+          "id": "3868562a-d4c9-499d-a1d8-f9c6084406a9",
+          "scope": "project",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793652572604,
+          "contentHash": "82f3082753b4caeb398de471897c6e4bd0f189df05ffc3e6b97ad11bd48c75d5",
+          "revision": "7f339562-7322-41aa-9524-113b66a3e3b9",
+          "inputFingerprint": "2e0bfd0ccfd6b6542e163aab0d1c8d0f756e564da8d7628e8397856164a0985b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision",
+          "status": "cleaned",
+          "cleanedAfterRender": "449d66d5-389a-4004-a63b-273e4a76af07"
+        }
+      ],
+      "e048b3eb-d3a0-4790-a745-24d29e26aeed": [
+        {
+          "id": "dfd842f7-7493-4665-9952-e8b03f214512",
+          "scope": "project",
+          "report": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\artifacts\\checks\\dfd842f7-7493-4665-9952-e8b03f214512.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 10000,
+              "contrast": true,
+              "strict": false,
+              "snapshots": false,
+              "browserGpuMode": "auto"
+            }
+          },
+          "createdAt": 1793653595937,
+          "contentHash": "df5094df1f137957e52796c8798a2e64cbdee9483e574dd1fa8d75c131960b28",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "aa23bd9d-c412-4770-a0d4-ddf9ce72e197",
+        "scope": "project",
+        "report": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\artifacts\\checks\\aa23bd9d-c412-4770-a0d4-ddf9ce72e197.json",
+        "metadata": {
+          "ok": false,
+          "browserSkipped": true,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 10000,
+            "contrast": true,
+            "strict": false,
+            "snapshots": false,
+            "browserGpuMode": "auto"
+          }
+        },
+        "createdAt": 1793652335673,
+        "contentHash": "75967000c6674a0831cb48d433b0810a6b763534135dcdb4610ed9b149717d15",
+        "revision": null,
+        "inputFingerprint": "4704aeb0bbd3f8d063dfe22a1090bca9f64af64e4c1b4cf47a964cf599da62e6",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+      "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-7"
+    },
+    "revisions": {
+      "c9786fc8-232e-4c0c-b61d-4ff3992a38cd": [
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-0",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-00-at-0s.png",
+          "time": 0,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492138,
+          "contentHash": "a81038cf0bfba31043d559b4b6ceb0c7d50d0910f86746fe47609841a5800d47",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-1",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-01-at-2.4s.png",
+          "time": 2.4,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492138,
+          "contentHash": "6a5d93f2ada321b562c69310ef5d60fdd89dc7eb4b4794fac21883eb5d9d6f7e",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-2",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-02-at-3.9s.png",
+          "time": 3.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492138,
+          "contentHash": "96ab14d5ce8a4e5f6cdb5749e8864ba03ede3b80d549b4776ae5d4b62c8905b0",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-3",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-03-at-6.5s.png",
+          "time": 6.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492138,
+          "contentHash": "09a9c560cbaba3d4a625f80cd4aea976a6263928696a07a268600584ef362281",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-4",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-04-at-7.4s.png",
+          "time": 7.4,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492138,
+          "contentHash": "2452fe07726c7caf189a8810784aeca9b6463f9fd681ff73e9ceff4a124cf3b7",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-5",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-05-at-9.95s.png",
+          "time": 9.95,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492138,
+          "contentHash": "140aeeac763dfbc5b8141d63eea06c3f64b8ae417752a76995e86344c15fb97b",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-6",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-06-at-12s.png",
+          "time": 12,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492139,
+          "contentHash": "3f45120a8544a98cc6689200b594cab011f05b1659e3b54dfc65090fd9a15fb2",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-7",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-07-at-15.5s.png",
+          "time": 15.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492139,
+          "contentHash": "41d34ac5a36ae35941a06b45c0073fcb7e015602b85924daa4d016a8832923bc",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-8",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-08-at-19.4s.png",
+          "time": 19.4,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492140,
+          "contentHash": "a8e2c41534deead0cf6672e02cc54a24fec3eb6d68e76c10ba40bd6395258d62",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-9",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-09-at-21.2s.png",
+          "time": 21.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492140,
+          "contentHash": "a291787be8a7b308dfe2c330b08b59184949bf1fc3ff28183615a092cdb1e9f2",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-10",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-10-at-24s.png",
+          "time": 24,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492141,
+          "contentHash": "fb6da5e49f558c038b093c1edb83f250e7505d7d6cb80802f43e963e7d6e463c",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-11",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-11-at-26.5s.png",
+          "time": 26.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492141,
+          "contentHash": "54bd1901bc95d9d14c8852e74089f969d8fa9f437e8eda3c9db60b3b78b9c607",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-12",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-12-at-29s.png",
+          "time": 29,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492142,
+          "contentHash": "a24013290b69a95d126cbeba2810bfd2fe777fc90bd0e0b927d169bf12f3a4aa",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-13",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-13-at-31.2s.png",
+          "time": 31.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492143,
+          "contentHash": "a28d2ece828e99301d60dac3aed43fb84fcceaa1bc43196720dcc4a05ec0f077",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-14",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-14-at-32.4s.png",
+          "time": 32.4,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492144,
+          "contentHash": "12f4e024e8fddb27270fcb5880d7b364ef4929eb46bd0f3fd45c2623c0830e77",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-15",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-15-at-35.5s.png",
+          "time": 35.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492144,
+          "contentHash": "6c652c1d567bc88458f5d4c5a75a4f3ffb620e81da428afc3998e78214b131cc",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-16",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-16-at-38.6s.png",
+          "time": 38.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492145,
+          "contentHash": "e9fcefd755d1240eb32779144a3b86673126f563836d7f9fbb678d0ba4767e6c",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-17",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-17-at-42.5s.png",
+          "time": 42.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492146,
+          "contentHash": "ddbd0830f91ff821615f566aa90a409ecbb1c4058084e37a35433f2d9f5becea",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "699501e1-c26e-49e3-a437-063e137dca68-18",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps\\frame-18-at-43.75s.png",
+          "time": 43.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652492150,
+          "contentHash": "ddbd0830f91ff821615f566aa90a409ecbb1c4058084e37a35433f2d9f5becea",
+          "revision": "c9786fc8-232e-4c0c-b61d-4ff3992a38cd",
+          "inputFingerprint": "7f342a920b3f1f21d51e54e95eb791dcf8b53c9a1ab8e317e0bf0d82f473ef72",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "58cf0629-253f-4463-94b9-fb11347ff6ac": [
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-0",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-00-at-5.45s.png",
+          "time": 5.45,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536151,
+          "contentHash": "f963ea8cab0e16358d6a94779b47a0e8beef761e41e3e4979f2e173bad1d16e6",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-1",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-01-at-6.9s.png",
+          "time": 6.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536152,
+          "contentHash": "33cf3b0e070a745bcea6cabdbe488faa0d1bd777a8cc696254053347eb71ab78",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-2",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-02-at-7.3s.png",
+          "time": 7.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536153,
+          "contentHash": "8086d54834834c2a831622b0e5995beffd36c56dd80a0573edf3fcb21e205603",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-3",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-03-at-9.9s.png",
+          "time": 9.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536154,
+          "contentHash": "67f086fb2cf0783ed1376311e563bb76b2bd5ce7dd4aa819f65bd5989e8f81da",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-4",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-04-at-10.85s.png",
+          "time": 10.85,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536156,
+          "contentHash": "3bb2f6de42b2ba0a396d08688173c2d32df2340d803613e301ea2ac75657bd7b",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-5",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-05-at-11.05s.png",
+          "time": 11.05,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536157,
+          "contentHash": "526c6a7f3368e5430e9dbe42be5266ea7b5994fd7241db668632d264ab309f0f",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-6",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-06-at-16.85s.png",
+          "time": 16.85,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536158,
+          "contentHash": "279288cf3c79ad72af93cd68d4c3eb7b0faeed8d05877dca865f93b913bb281f",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-7",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-07-at-17.05s.png",
+          "time": 17.05,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536160,
+          "contentHash": "4632c8df8be58081918451b86f75abc86d4fcc3316c0be8c20bbe9c88404ec25",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-8",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-08-at-36.9s.png",
+          "time": 36.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536161,
+          "contentHash": "22b2407f7b78f1254aae6f23c46391172d209b9a260690969e1adf0c2af9b18b",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-9",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-09-at-37.15s.png",
+          "time": 37.15,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536165,
+          "contentHash": "7265866529ecf1b599ab88ca650b495069ca0e1f824fd1def2a8aaacb841150e",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-10",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-10-at-41.2s.png",
+          "time": 41.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536168,
+          "contentHash": "7b8832ee0c4324cd00eba16d0cb071bd9e34e2339fda7daa5481456fff5b678b",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "75f4d46f-0120-4dd7-9621-94ee7df34ee4-11",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps2\\frame-11-at-43.75s.png",
+          "time": 43.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793652536169,
+          "contentHash": "ddbd0830f91ff821615f566aa90a409ecbb1c4058084e37a35433f2d9f5becea",
+          "revision": "58cf0629-253f-4463-94b9-fb11347ff6ac",
+          "inputFingerprint": "5af967e4aa1473e0e6169190d74e0e7433cf16a038bcc5b42a60284c4d5c064a",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "e048b3eb-d3a0-4790-a745-24d29e26aeed": [
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-0",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-00-at-2.6s.png",
+          "time": 2.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610391,
+          "contentHash": "f2035d4a57b2841cd3f458bde0c996a365ed4006bd8c81367942d735ff6c22b5",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-1",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-01-at-3.3s.png",
+          "time": 3.3,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610393,
+          "contentHash": "cdcef846cb8ff7d92742035a97f627a552f00fd82ffc3ac26cb454bff9d808f5",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-2",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-02-at-13.6s.png",
+          "time": 13.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610395,
+          "contentHash": "de45ce586e5d611a86110a3f855529ff85d48bdc8a9f28036986cb5e1004c244",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-3",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-03-at-15.5s.png",
+          "time": 15.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610397,
+          "contentHash": "6f12d131bd96f8771923ea8b5fa4455e2cd6823fdc8122f846003df79a57dbca",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-4",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-04-at-20.75s.png",
+          "time": 20.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610399,
+          "contentHash": "6fc11448b2b4f5431ef96c56e361316c80096a85550aaccdf365eab511045389",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-5",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-05-at-22.6s.png",
+          "time": 22.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610401,
+          "contentHash": "bef079ccc5059df4ba0f8d72ed7a3b35db861dab14a4a1d833679bb7d98d240b",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-6",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-06-at-38s.png",
+          "time": 38,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610403,
+          "contentHash": "9fe90f7d511a35ab564b49df70cb52faf4089eda263927498dddf3051679d6a8",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "80200ab0-73f0-4bae-ae18-ebe6042ac082-7",
+          "image": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\.hyperframes\\snaps3\\frame-07-at-40.9s.png",
+          "time": 40.9,
+          "metadata": {
+            "width": 1920,
+            "height": 1080,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1793653610405,
+          "contentHash": "20b75f243d8fce71b427e514e5af7b3bb7c7ccdfc7e9886e637b604e0002bd74",
+          "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed",
+          "inputFingerprint": "81951b101267c98aadb18e65844ab8d79eaa530dcda0635b15522da142a7e32f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  },
+  "renders": {
+    "latest": {
+      "id": "449d66d5-389a-4004-a63b-273e4a76af07",
+      "completedAt": 1793653693976,
+      "output": "C:\\Users\\Asus\\Desktop\\Development\\startup-copilot\\demo-video\\renders\\_raw.mp4",
+      "status": "completed",
+      "revision": "e048b3eb-d3a0-4790-a745-24d29e26aeed"
+    },
+    "retainedRevisions": [
+      "e048b3eb-d3a0-4790-a745-24d29e26aeed"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

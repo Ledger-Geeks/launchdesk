@@ -1,0 +1,57 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; font-family: "Archivo Black", sans-serif; color: #121212; }
+    #hook-lines { position: absolute; left: 220px; top: 250px; }
+    .hook-line { font-size: 150px; line-height: 1.04; letter-spacing: -0.03em; white-space: nowrap; }
+    .hook-w { display: inline-block; }
+    #hook-great { position: relative; display: inline-block; padding: 0 18px; }
+    #hook-mark { position: absolute; inset: 8px 0 0 0; background: #ffd60a; transform-origin: left center; }
+    #hook-great-txt { position: relative; }
+    #hook-lockup { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 44px; }
+    #hook-logo { width: 220px; height: 220px; }
+    #hook-word { font-size: 150px; letter-spacing: -0.04em; text-transform: uppercase; }
+    #hook-wipe { position: absolute; inset: 0; background: #ffd60a; transform-origin: left center; }
+  </style>
+  <div id="root" data-composition-id="hook" data-width="1920" data-height="1080">
+    <div id="hook-lines" class="clip" data-start="0" data-duration="3.4">
+      <div class="hook-line"><span class="hook-w" id="hw1">Every</span> <span class="hook-w" id="hw2">startup</span> <span class="hook-w" id="hw3">idea</span></div>
+      <div class="hook-line"><span class="hook-w" id="hw4">sounds</span> <span class="hook-w" id="hook-great"><span id="hook-mark"></span><span id="hook-great-txt">great</span></span></div>
+      <div class="hook-line"><span class="hook-w" id="hw6">in</span> <span class="hook-w" id="hw7">your</span> <span class="hook-w" id="hw8">head.</span></div>
+    </div>
+
+    <div id="hook-lockup" class="clip" data-start="2.98" data-duration="2.62">
+      <svg id="hook-logo" viewBox="0 0 36 36">
+        <rect id="hook-logo-shadow" x="6" y="6" width="28" height="28" fill="#121212" />
+        <g id="hook-logo-tile">
+          <rect x="2" y="2" width="28" height="28" fill="#FFD60A" stroke="#121212" stroke-width="3" />
+          <path id="hook-logo-arrow" d="M16 7 L24 15.5 H19.5 V25 H12.5 V15.5 H8 Z" fill="#121212" />
+        </g>
+      </svg>
+      <div id="hook-word">LaunchDesk</div>
+    </div>
+
+    <div id="hook-wipe" class="clip" data-start="5.2" data-duration="0.4"></div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    // words land on the voice (transcript times)
+    // line 1 is on screen at frame 0 (the thumbnail) and settles; the rest land on the voice
+    tl.fromTo("#hook-lines", { scale: 1.08 }, { scale: 1, duration: 0.22, ease: "power2.out" }, 0);
+    const words = [["#hw4", 1.52], ["#hook-great", 1.84], ["#hw6", 2.16], ["#hw7", 2.32], ["#hw8", 2.48]];
+    words.forEach(([id, t]) => {
+      tl.fromTo(id, { opacity: 0, y: 60, rotation: 3 }, { opacity: 1, y: 0, rotation: 0, duration: 0.32, ease: "back.out(2.2)" }, t - 0.06);
+    });
+    tl.fromTo("#hook-mark", { scaleX: 0 }, { scaleX: 1, duration: 0.3, ease: "power3.out" }, 1.94);
+    tl.to("#hook-lines", { y: -140, opacity: 0, duration: 0.2, ease: "power3.in" }, 2.9);
+
+    // the mark is performed: tile drops, shadow stays, arrow lifts
+    tl.fromTo("#hook-logo-tile", { y: -40, opacity: 0 }, { y: 0, opacity: 1, duration: 0.4, ease: "bounce.out" }, 3.0);
+    tl.fromTo("#hook-logo-shadow", { opacity: 0 }, { opacity: 1, duration: 0.1 }, 3.22);
+    tl.fromTo("#hook-logo-arrow", { y: 4 }, { y: -2, duration: 0.5, ease: "back.out(3)" }, 3.38);
+    tl.fromTo("#hook-word", { clipPath: "inset(0 100% 0 0)" }, { clipPath: "inset(0 0% 0 0)", duration: 0.5, ease: "power3.out" }, 3.22);
+    tl.fromTo("#hook-lockup", { scale: 1 }, { scale: 1.05, duration: 2.6, ease: "none" }, 2.98);
+
+    tl.fromTo("#hook-wipe", { scaleX: 0 }, { scaleX: 1, duration: 0.36, ease: "power3.inOut" }, 5.2);
+    window.__timelines["hook"] = tl;
+  </script>
+</template>

@@ -1,0 +1,40 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; background: #ededE6; overflow: hidden; color: #121212; }
+    .cam { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; transform-origin: 0 0; }
+    .cam img { position: absolute; left: 0; top: 0; width: 1920px; }
+    .cursor { position: absolute; left: 0; top: 0; width: 56px; height: 70px; z-index: 5; }
+    .ring { position: absolute; width: 80px; height: 80px; margin: -40px 0 0 -40px; border: 6px solid #121212; border-radius: 50%; z-index: 4; }
+    .wipe { position: absolute; inset: 0; background: #ffd60a; z-index: 6; }
+    #land-wipe { transform-origin: left center; }
+  </style>
+  <div id="root" data-composition-id="land" data-width="1920" data-height="1080">
+
+    <div id="land-cam" class="cam">
+      <img id="land-prev" class="clip" data-start="0" data-duration="0.47000000000000003" src="assets/shots/10-go-to-market-full.png" alt="" />
+      <img id="land-img" class="clip" data-start="0.45" data-duration="10.37" src="assets/shots/11-landing-page-full.png" alt="" />
+      <div id="land-dl" class="ring clip" data-start="6.16" data-duration="0.6" style="left: 468px; top: 1198px; width: 300px; height: 120px; margin: -60px 0 0 -150px; border-radius: 0"></div>
+    </div>
+    <div id="land-wipe" class="wipe clip" data-start="10.42" data-duration="0.4"></div>
+    <div id="land-ring" class="ring clip" data-start="0.45" data-duration="0.5" style="left: 1228px; top: 385px"></div>
+    <svg id="land-cursor" class="cursor clip" data-start="0" data-duration="1.2" viewBox="0 0 24 30"><path d="M2 2 L2 24 L8 18.5 L12 27.5 L15.5 26 L11.5 17 L19.5 17 Z" fill="#121212" stroke="#ffffff" stroke-width="1.6" stroke-linejoin="round" /></svg>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const frame = (fx, fy, s, h) => ({ x: 960 - fx * s, y: Math.min(0, Math.max(1080 - h * s, 540 - fy * s)), scale: s });
+
+    tl.fromTo("#land-cursor", { x: 1500, y: 950, opacity: 0 }, { x: 1228, y: 385, opacity: 1, duration: 0.4, ease: "power3.out" }, 0);
+    tl.to("#land-cursor", { scale: 0.85, duration: 0.07, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 0.41000000000000003);
+    tl.fromTo("#land-ring", { scale: 0.3, opacity: 1 }, { scale: 1.4, opacity: 0, duration: 0.45, ease: "power2.out" }, 0.45);
+    tl.fromTo("#land-img", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.25, ease: "power2.out" }, 0.45);
+    tl.to("#land-cursor", { x: 1600, y: 1100, opacity: 0, duration: 0.45, ease: "power2.in" }, 0.7);
+    tl.to("#land-cam", { ...frame(960, 800, 1.15, 1320), duration: 0.8, ease: "power3.inOut" }, 1.25);
+    tl.to("#land-cam", { ...frame(960, 900, 1.15, 1320), duration: 1.2, ease: "power3.inOut" }, 3.65);
+    tl.to("#land-cam", { ...frame(700, 1090, 1.5, 99999), duration: 0.8, ease: "power3.inOut" }, 5.41);
+    tl.fromTo("#land-dl", { scale: 0.8, opacity: 1 }, { scale: 1.25, opacity: 0, duration: 0.55, ease: "power2.out" }, 6.16);
+    tl.fromTo("#land-wipe", { scaleX: 0 }, { scaleX: 1, duration: 0.36, ease: "power3.inOut" }, 10.42);
+    // back to the top of the page so the next tab is in view
+    tl.to("#land-cam", { ...frame(960, 540, 1, 1320), duration: 0.6, ease: "power3.inOut" }, 10.12);
+    window.__timelines["land"] = tl;
+  </script>
+</template>
