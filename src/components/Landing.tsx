@@ -38,7 +38,7 @@ const SAMPLE = {
 }
 
 const FAQ = [
-  { q: 'Do you store my idea?', a: 'No. It is sent to OpenAI to generate the brief and is not saved by this app. Treat it like any message you send to an AI service.' },
+  { q: 'Do you store my idea?', a: 'No. It is sent through OpenRouter to the AI model that generates the brief and is not saved by this app. Treat it like any message you send to an AI service.' },
   { q: 'How reliable are the numbers?', a: 'They are informed estimates, not research. Use them to decide what to check first, then verify market size and pricing with real sources.' },
   { q: 'How long does it take?', a: 'Usually a minute or two, depending on how busy the model is.' },
   { q: 'What can I take away?', a: 'The landing page draft downloads as one HTML file. The rest of the brief stays on screen, so copy what you need.' },

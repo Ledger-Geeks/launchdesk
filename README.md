@@ -40,19 +40,19 @@
 - **Build Tool** — Vite 6
 - **Styling** — Tailwind CSS 3, neo-brutalist (Archivo + Geist), lucide-react icons
 - **Animation** — anime.js storyboard (`BriefDemo.tsx`): idea typed, scanned, returned as a fanned brief
-- **AI** — OpenAI Chat Completions (model set by `OPENAI_MODEL`)
+- **AI** — OpenRouter Chat Completions (model set by `OPENROUTER_MODEL`, default `openai/gpt-5.5`)
 - **Deployment** — Vercel (static frontend + one serverless function)
 - **Architecture** — React SPA; `api/blueprint.ts` holds the API key and prompt server-side. The results view is lazy-loaded.
 
 ### Security model
 
-- The OpenAI key lives only in the server environment (`OPENAI_API_KEY`, no `VITE_` prefix), so it is never in the browser bundle.
+- The OpenRouter key lives only in the server environment (`OPENROUTER_API_KEY`, no `VITE_` prefix), so it is never in the browser bundle.
 - The API accepts only `{ idea }`. The model, prompt and token limit are fixed on the server, so the endpoint cannot be used as a general-purpose LLM proxy.
-- Requests are checked for same origin, body size and idea length (10-2000 chars), and rate-limited per IP.
+- Requests are checked for same origin, body size and idea length (10-2000 chars), and limited to `AI_DAILY_LIMIT` (default 5) AI requests per IP per UTC day. The count is in memory, so on Vercel it is per instance and approximate.
 - Provider errors are logged on the server only. The client gets a generic message.
 - The AI-generated landing page renders in an `<iframe sandbox="">`, so its scripts, forms and same-origin access are all blocked.
 - `vercel.json` sets CSP, HSTS, `nosniff`, Referrer-Policy and Permissions-Policy headers.
-- **Also do this:** set a monthly budget limit on your OpenAI project. It is the only hard cap on spend.
+- **Also do this:** set a credit limit on your OpenRouter API key. It is the only hard cap on spend.
 
 ---
 
@@ -69,7 +69,7 @@
 git clone https://github.com/Minhalrizvi12/launchdesk.git
 cd launchdesk
 npm install
-cp .env.example .env.local   # then add your OPENAI_API_KEY
+cp .env.example .env.local   # then add your OPENROUTER_API_KEY
 npm run dev
 ```
 
@@ -83,7 +83,7 @@ npm run check:api
 
 ### Deploy
 
-Import the repo in Vercel, then set `OPENAI_API_KEY` (and optionally `OPENAI_MODEL`) under Project → Settings → Environment Variables.
+Import the repo in Vercel, then set `OPENROUTER_API_KEY` (and optionally `OPENROUTER_MODEL`, `AI_DAILY_LIMIT`) under Project → Settings → Environment Variables.
 
 ---
 
@@ -92,7 +92,7 @@ Import the repo in Vercel, then set `OPENAI_API_KEY` (and optionally `OPENAI_MOD
 ```text
 launchdesk/
 ├── api/
-│   └── blueprint.ts        # server: key, prompt, validation, rate limit
+│   └── blueprint.ts        # server: key, prompt, validation, daily AI limit
 ├── scripts/
 │   └── check-api.ts        # runnable security checks for the API
 ├── src/

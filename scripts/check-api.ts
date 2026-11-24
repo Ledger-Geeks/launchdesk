@@ -5,7 +5,7 @@ import assert from 'node:assert/strict'
 const valid = { pitch: {}, market: {}, product: {}, roadmap: {}, tech: {}, finance: {}, gtm: {}, website: '<p>hi</p>' }
 let modelContent = JSON.stringify(valid)
 globalThis.fetch = (async () => Response.json({ choices: [{ message: { content: modelContent } }] })) as typeof fetch
-process.env.OPENAI_API_KEY = 'test-key'
+process.env.OPENROUTER_API_KEY = 'test-key'
 
 const { POST } = await import('../api/blueprint.ts')
 
@@ -33,10 +33,21 @@ modelContent = '{"pitch":{}}'
 assert.equal((await call(idea)).status, 502, 'incomplete model output rejected')
 modelContent = JSON.stringify(valid)
 
+// Daily quota: 5 per IP per UTC day (AI_DAILY_LIMIT unset). Clock pinned to 20:00 UTC.
+const realNow = Date.now
+let now = Date.UTC(2026, 0, 1, 20)
+Date.now = () => now
 for (let i = 0; i < 5; i++) assert.equal((await call(idea, { ip: '1.2.3.4' })).status, 200)
-assert.equal((await call(idea, { ip: '1.2.3.4' })).status, 429, '6th request in window rate-limited')
+const over = await call(idea, { ip: '1.2.3.4' })
+assert.equal(over.status, 429, '6th request in a day refused')
+assert.equal(over.headers.get('retry-after'), String(4 * 3600))
+assert.deepEqual(await over.json(), { error: 'Daily AI limit reached (5 per day). Try again in 4h.', remaining: 0, resetInSec: 4 * 3600 })
+assert.equal((await call(idea, { ip: '5.6.7.8' })).status, 200, 'other IPs keep their own quota')
+now += 4 * 3600_000
+assert.equal((await call(idea, { ip: '1.2.3.4' })).status, 200, 'quota resets at UTC midnight')
+Date.now = realNow
 
-delete process.env.OPENAI_API_KEY
+delete process.env.OPENROUTER_API_KEY
 assert.equal((await call(idea)).status, 500, 'missing key fails closed')
 
 console.log('api/blueprint.ts: all checks passed')

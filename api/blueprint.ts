@@ -1,23 +1,31 @@
-// Server-only. The OpenAI key and the prompt never reach the browser bundle.
+// Server-only. The OpenRouter key and the prompt never reach the browser bundle.
 
-const MODEL = process.env.OPENAI_MODEL || 'gpt-5.5'
+const MODEL = process.env.OPENROUTER_MODEL || 'openai/gpt-5.5'
 const MAX_BODY = 10_000
 const IDEA_MIN = 10
 const IDEA_MAX = 2000
 const REQUIRED_KEYS = ['pitch', 'market', 'product', 'roadmap', 'tech', 'finance', 'gtm', 'website']
 
-// ponytail: per-instance memory, so limits reset on cold start and aren't shared across instances.
-// Upgrade path: Vercel Firewall rate-limit rule or Upstash Redis if abuse shows up.
-const RATE_LIMIT = 5
-const RATE_WINDOW_MS = 10 * 60_000
-const hits = new Map<string, number[]>()
+// ponytail: no DB/KV in this app, so counts live in memory: they reset on cold start and each Vercel
+// instance counts on its own, so the limit is approximate there. Upgrade path: Upstash Redis INCR + EXPIREAT.
+const DAILY_LIMIT = Number(process.env.AI_DAILY_LIMIT) || 5
+const DAY_MS = 86_400_000
+let usageDay = 0
+const usage = new Map<string, number>()
 
-function rateLimited(ip: string) {
+// Counts one AI request for `key` in the current UTC day. Synchronous read+write, so atomic per instance.
+function takeDailyQuota(key: string) {
   const now = Date.now()
-  const recent = (hits.get(ip) || []).filter(t => now - t < RATE_WINDOW_MS)
-  recent.push(now)
-  hits.set(ip, recent)
-  return recent.length > RATE_LIMIT
+  const day = Math.floor(now / DAY_MS)
+  if (day !== usageDay) {
+    usage.clear()
+    usageDay = day
+  }
+  const resetInSec = Math.ceil(((day + 1) * DAY_MS - now) / 1000)
+  const used = usage.get(key) ?? 0
+  if (used >= DAILY_LIMIT) return { ok: false, resetInSec }
+  usage.set(key, used + 1)
+  return { ok: true, resetInSec }
 }
 
 const json = (body: unknown, status = 200) => Response.json(body, { status })
@@ -142,11 +150,6 @@ export async function POST(request: Request) {
     return json({ error: 'Forbidden' }, 403)
   }
 
-  const ip = request.headers.get('x-real-ip') || request.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'local'
-  if (rateLimited(ip)) {
-    return json({ error: 'Too many requests. Try again in a few minutes.' }, 429)
-  }
-
   const raw = await request.text()
   if (raw.length > MAX_BODY) return json({ error: 'Request too large' }, 413)
 
@@ -160,20 +163,34 @@ export async function POST(request: Request) {
     return json({ error: `Describe your idea in ${IDEA_MIN}-${IDEA_MAX} characters.` }, 400)
   }
 
-  const apiKey = process.env.OPENAI_API_KEY
+  // No auth in this app, so the quota is per client IP. Vercel sets X-Forwarded-For; dev passes the socket address as X-Real-IP.
+  const ip = request.headers.get('x-forwarded-for')?.split(',')[0].trim() || request.headers.get('x-real-ip') || 'local'
+  const quota = takeDailyQuota(ip)
+  if (!quota.ok) {
+    return Response.json(
+      {
+        error: `Daily AI limit reached (${DAILY_LIMIT} per day). Try again in ${Math.ceil(quota.resetInSec / 3600)}h.`,
+        remaining: 0,
+        resetInSec: quota.resetInSec,
+      },
+      { status: 429, headers: { 'Retry-After': String(quota.resetInSec) } },
+    )
+  }
+
+  const apiKey = process.env.OPENROUTER_API_KEY
   if (!apiKey) {
-    console.error('OPENAI_API_KEY is not set')
+    console.error('OPENROUTER_API_KEY is not set')
     return json({ error: 'Server is not configured' }, 500)
   }
 
   let upstream: Response
   try {
-    upstream = await fetch('https://api.openai.com/v1/chat/completions', {
+    upstream = await fetch('https://openrouter.ai/api/v1/chat/completions', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({
         model: MODEL,
-        max_completion_tokens: 16000,
+        max_tokens: 16000,
         response_format: { type: 'json_object' },
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
@@ -183,13 +200,13 @@ export async function POST(request: Request) {
       signal: AbortSignal.timeout(120_000),
     })
   } catch (err) {
-    console.error('OpenAI request failed', err)
+    console.error('OpenRouter request failed', err)
     return json({ error: 'The AI service did not respond. Please try again.' }, 504)
   }
 
   if (!upstream.ok) {
     // Log the provider's message server-side only; it can contain account details.
-    console.error('OpenAI error', upstream.status, await upstream.text())
+    console.error('OpenRouter error', upstream.status, await upstream.text())
     return json({ error: 'The AI service returned an error. Please try again.' }, 502)
   }
 

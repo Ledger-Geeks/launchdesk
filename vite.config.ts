@@ -14,11 +14,11 @@ function devApi(): Plugin {
         const { POST } = await server.ssrLoadModule('/api/blueprint.ts')
         const response: Response = await POST(new Request(`http://${req.headers.host}/api/blueprint`, {
           method: 'POST',
-          headers: { host: req.headers.host ?? '', origin: req.headers.origin ?? '' },
+          headers: { host: req.headers.host ?? '', origin: req.headers.origin ?? '', 'x-real-ip': req.socket.remoteAddress ?? '' },
           body,
         }))
         res.statusCode = response.status
-        res.setHeader('Content-Type', 'application/json')
+        response.headers.forEach((value, key) => res.setHeader(key, value))
         res.end(await response.text())
       })
     },
